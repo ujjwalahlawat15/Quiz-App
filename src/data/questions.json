@@ -1,0 +1,49 @@
+[
+{
+"id": "lq-4",
+"question": "In JavaScript, which of the following is NOT a primitive type?",
+"options": ["string", "number", "object", "boolean"],
+"correctIndex": 2
+},
+{
+"id": "lq-5",
+"question": "What does the 'key' prop help React identify?",
+"options": [
+"Which elements are new, changed, or removed",
+"The element's CSS class",
+"The element's parent",
+"The element's event handlers"
+],
+"correctIndex": 0
+},
+{
+"id": "lq-6",
+"question": "Which tag makes text bold in semantic HTML?",
+"options": ["<b>", "<i>", "<strong>", "<bold>"],
+"correctIndex": 2
+},
+{
+"id": "lq-7",
+"question": "Which array method creates a new array with results of calling a function on every element?",
+"options": ["forEach", "reduce", "map", "filter"],
+"correctIndex": 2
+},
+{
+"id": "lq-8",
+"question": "What is the default HTTP status code for a successful GET request?",
+"options": ["201", "204", "200", "302"],
+"correctIndex": 2
+},
+{
+"id": "lq-9",
+"question": "Which CSS unit is relative to the font-size of the root element?",
+"options": ["em", "rem", "vh", "%"],
+"correctIndex": 1
+},
+{
+"id": "lq-10",
+"question": "React Router's component for declarative navigation is?",
+"options": ["<Route>", "<Link>", "<Switch>", "<Nav>"],
+"correctIndex": 1
+}
+]
