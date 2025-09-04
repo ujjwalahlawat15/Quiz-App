@@ -1,12 +1,69 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Quiz App (React + Vite)
 
-Currently, two official plugins are available:
+A small, responsive quiz application built with React (Vite).  
+Features: load questions from Open Trivia DB (API) or local JSON, one-question-per-view UI, per-question timer, progress tracking, results review, and session persistence so a page refresh keeps the same quiz state.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Demo / Quick start
+
+### Prerequisites
+- Node.js v16+ and npm
+- Optional: Git, VS Code
+
+### Install & Run (development)
+
+# 1. create project
+```npm create vite@latest Quiz-App```
+
+# 2. copy source files into src/ (or replace with the provided code)
+
+# 3. install deps
+```npm install
+npm install react-router-dom framer-motion```
+
+# 4. insatll Tailwind
+```npm install tailwindcss @tailwindcss/vite```
+# ensure src/index.css includes:
+# @import "tailwindcss";
+
+# 5. run the project
+```npm run dev```
+
+
+
+---
+
+## ✅ 2. Project Structure + Features
+- Folder structure (`src/components`, `src/pages`, `src/hooks`, etc.)  
+- Key features (API fetch, timer, results, session persistence, keyboard shortcuts, responsive design).  
+- Edge cases handled (no internet, API error, empty/short data, rapid clicks, refresh persistence).  
+
+👉 Example:
+```markdown
+## Project Structure
+src/
+ ├── components/   # Button, Card, Container, Progress
+ ├── pages/        # SetupPage, QuizPage, ResultsPage, NotFound
+ ├── hooks/        # useCountdown, useKeyDown
+ ├── utils/        # helpers, fetchApiQuestions, validators
+ ├── data/         # fallback questions.json
+
+## Features
+- Load 5–10 questions (API or local).
+- One question per screen, 4 options.
+- Per-question timer (configurable).
+- Progress bar + keyboard shortcuts.
+- Results page with review & high score.
+- Session persistence via sessionStorage.
+
+## Architecture & Design Decisions
+- **React functional components + hooks**: clean state management (useState, useEffect).
+- **sessionStorage**: saves current quiz session so F5 reload continues same questions & answers.
+- **localStorage**: stores persistent high scores across sessions.
+- **API-first, fallback local**: ensures quiz works offline.
+- **UI/UX**: one question per page, disabled Next until answered, configurable timer, keyboard shortcuts.
+- **Styling**: TailwindCSS for responsiveness, Framer Motion for animations.
+- **Accessibility**: radio group semantics, keyboard navigation, focus states.
+
