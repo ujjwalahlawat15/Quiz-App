@@ -12,43 +12,53 @@ Features: load questions from Open Trivia DB (API) or local JSON, one-question-p
 - Node.js v16+ and npm
 - Optional: Git, VS Code
 
-### Install & Run (development)
+### Install & Run
 
-# 1. create project
-```npm create vite@latest Quiz-App```
+1. create project
+```
+npm create vite@latest Quiz-App
+```
 
-# 2. copy source files into src/ (or replace with the provided code)
+2. copy source files into src/
 
-# 3. install deps
-```npm install
-npm install react-router-dom framer-motion```
+3. install dependencies
 
-# 4. insatll Tailwind
-```npm install tailwindcss @tailwindcss/vite```
-# ensure src/index.css includes:
-# @import "tailwindcss";
+```
+npm install react-router-dom framer-motion
+```
 
-# 5. run the project
-```npm run dev```
+4. insatll Tailwind
+```
+npm install tailwindcss @tailwindcss/vite
+```
+5. ensure src/index.css includes:
+@import "tailwindcss";
+
+6. run the project
+```
+npm run dev
+```
 
 
 
 ---
 
-## ✅ 2. Project Structure + Features
+## Project Structure + Features
 - Folder structure (`src/components`, `src/pages`, `src/hooks`, etc.)  
 - Key features (API fetch, timer, results, session persistence, keyboard shortcuts, responsive design).  
 - Edge cases handled (no internet, API error, empty/short data, rapid clicks, refresh persistence).  
 
-👉 Example:
-```markdown
+
+
 ## Project Structure
+```text
 src/
- ├── components/   # Button, Card, Container, Progress
- ├── pages/        # SetupPage, QuizPage, ResultsPage, NotFound
- ├── hooks/        # useCountdown, useKeyDown
- ├── utils/        # helpers, fetchApiQuestions, validators
- ├── data/         # fallback questions.json
+├── components/ # Button, Card, Container, Progress
+├── pages/ # SetupPage, QuizPage, ResultsPage, NotFound
+├── hooks/ # useCountdown, useKeyDown
+├── utils/ # helpers, fetchApiQuestions
+├── data/ # fallback questions.json
+```
 
 ## Features
 - Load 5–10 questions (API or local).
